@@ -50,11 +50,11 @@ BlueButton Online Class: Seamless integration of BigBlueButton with WordPress.
 	2. Enter your BigBlueButton server URL and secret key. Don’t have a BigBlueButton server? <a href="https://higheredlab.com/bigbluebutton-hosting/" target="_blank">Get BigBlueButton at 40% lower cost</a>.
 2. How to use
 	1. Go to click on  'Add New Class' to create a new class
-    2. Share invite URL with your students
+        2. Share invite URL with your students
 3. How to View Recordings
 	1. Click on more options (three dots) on the class you want to view recording
-    2. Click on 'Recordings' to view the recording
-    3. Note: Recording will be available only if the class is recorded
+        2. Click on 'Recordings' to view the recording
+        3. Note: Recording will be available only if the class is recorded
 
 
 == Frequently Asked Questions ==
