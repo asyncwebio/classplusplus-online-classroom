@@ -200,7 +200,7 @@ function bbb_create_api_endpoint()
         '/get-settings/',
         array(
             'methods' => 'GET',
-            'callback' => 'handle_get_settings_request',
+            'callback' => 'bbb_handle_get_settings_request',
             'permission_callback' => '__return_true',
         )
     );
@@ -211,7 +211,7 @@ function bbb_create_api_endpoint()
         '/save-settings/',
         array(
             'methods' => 'POST',
-            'callback' => 'handle_save_settings_request',
+            'callback' => 'bbb_handle_save_settings_request',
             'permission_callback' => '__return_true',
         )
     );
@@ -223,7 +223,7 @@ function bbb_create_api_endpoint()
         '/get-classes/',
         array(
             'methods' => 'GET',
-            'callback' => 'handle_get_classes_request',
+            'callback' => 'bbb_handle_get_classes_request',
             'permission_callback' => '__return_true',
         )
     );
@@ -234,7 +234,7 @@ function bbb_create_api_endpoint()
         '/create-class/',
         array(
             'methods' => 'POST',
-            'callback' => 'handle_create_class_request',
+            'callback' => 'bbb_handle_create_class_request',
             'permission_callback' => '__return_true',
         )
     );
@@ -245,7 +245,7 @@ function bbb_create_api_endpoint()
         '/edit-class/',
         array(
             'methods' => 'POST',
-            'callback' => 'handle_edit_class_request',
+            'callback' => 'bbb_handle_edit_class_request',
             'permission_callback' => '__return_true',
         )
     );
@@ -256,7 +256,7 @@ function bbb_create_api_endpoint()
         '/delete-class/',
         array(
             'methods' => 'DELETE',
-            'callback' => 'handle_delete_class_request',
+            'callback' => 'bbb_handle_delete_class_request',
             'permission_callback' => '__return_true',
         )
     );
@@ -267,7 +267,7 @@ function bbb_create_api_endpoint()
         '/start-class/',
         array(
             'methods' => 'POST',
-            'callback' => 'handle_start_class_request',
+            'callback' => 'bbb_handle_start_class_request',
             'permission_callback' => '__return_true',
         )
     );
@@ -278,7 +278,7 @@ function bbb_create_api_endpoint()
         '/join-class/',
         array(
             'methods' => 'GET',
-            'callback' => 'handle_join_class_request',
+            'callback' => 'bbb_handle_join_class_request',
             'permission_callback' => '__return_true',
         )
     );
@@ -289,7 +289,7 @@ function bbb_create_api_endpoint()
         '/get-recordings/',
         array(
             'methods' => 'GET',
-            'callback' => 'handle_get_recording_request',
+            'callback' => 'bbb_handle_get_recording_request',
             'permission_callback' => '__return_true',
         )
     );
@@ -297,7 +297,7 @@ function bbb_create_api_endpoint()
 add_action('rest_api_init', 'bbb_create_api_endpoint');
 
 
-function handle_save_settings_request(WP_REST_Request $request)
+function bbb_handle_save_settings_request(WP_REST_Request $request)
 {
     $request_body = file_get_contents('php://input');
     $settings = sanitize_text_field($request_body);
@@ -310,7 +310,7 @@ function handle_save_settings_request(WP_REST_Request $request)
 }
 
 
-function handle_get_settings_request(WP_REST_Request $request)
+function bbb_handle_get_settings_request(WP_REST_Request $request)
 {
     $settings = sanitize_text_field(get_option('bbb_settings'));
     // payload object
@@ -322,7 +322,7 @@ function handle_get_settings_request(WP_REST_Request $request)
 }
 
 
-function handle_get_classes_request(WP_REST_Request $request)
+function bbb_handle_get_classes_request(WP_REST_Request $request)
 {
     global $wpdb;
     // check if url query parm id is present?
@@ -343,7 +343,7 @@ function handle_get_classes_request(WP_REST_Request $request)
     return rest_ensure_response($payload);
 }
 
-function handle_create_class_request(WP_REST_Request $request)
+function bbb_handle_create_class_request(WP_REST_Request $request)
 {
     $request_body = file_get_contents('php://input');
     $class_data = sanitize_text_field($request_body);
@@ -396,7 +396,7 @@ function handle_create_class_request(WP_REST_Request $request)
     return rest_ensure_response($payload);
 }
 
-function handle_delete_class_request(WP_REST_Request $request)
+function bbb_handle_delete_class_request(WP_REST_Request $request)
 {
 
     global $wpdb;
@@ -412,7 +412,7 @@ function handle_delete_class_request(WP_REST_Request $request)
     return new WP_REST_Response(null, 200);
 }
 
-function handle_edit_class_request(WP_REST_Request $request)
+function bbb_handle_edit_class_request(WP_REST_Request $request)
 {
     global $wpdb;
     $bbb_online_classroom = $wpdb->prefix . 'bbb_online_classroom';
@@ -471,7 +471,7 @@ function handle_edit_class_request(WP_REST_Request $request)
  * Start a bigbluebutton class
  */
 
-function handle_start_class_request(WP_REST_Request $request)
+function bbb_handle_start_class_request(WP_REST_Request $request)
 {
     global $wpdb;
     global $current_logged_in_wp_user;
@@ -649,7 +649,7 @@ function handle_start_class_request(WP_REST_Request $request)
  * Join a bigbluebutton class
  */
 
-function handle_join_class_request(WP_REST_Request $request)
+function bbb_handle_join_class_request(WP_REST_Request $request)
 {
     global $wpdb;
     global $current_logged_in_wp_user;
@@ -759,7 +759,7 @@ function handle_join_class_request(WP_REST_Request $request)
  * Get a bigbluebutton class recording
  */
 
-function handle_get_recording_request(WP_REST_Request $request)
+function bbb_handle_get_recording_request(WP_REST_Request $request)
 {
     // get bbb settings
     $settings = sanitize_text_field(get_option('bbb_settings'));
