@@ -62,11 +62,6 @@ Class recordings can be accessed by Teachers through your WordPress Admin dashbo
 
 You can use the branding section to customize the appearance of the virtual classroom. You can add your logo, primary color, logout URL, and welcome message.
 
-## Screenshots
-
-1. BigBlueButton Online Class
-2. BigBlueButton UI
-3. View Recordings
 
 ## Support
 
