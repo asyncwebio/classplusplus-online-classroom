@@ -9,7 +9,9 @@
 
 BigBlueButton Online Class:
 
-https://github.com/AsyncWeb/bigbluebutton-wordpress-plugin/assets/77152354/1ebc91e9-f6d0-4430-8060-c93918b8bd6b
+
+https://github.com/AsyncWeb/bigbluebutton-wordpress-plugin/assets/77152354/0f88ba18-921e-4fa6-9c87-bd4da2e8a37a
+
 
 
 
