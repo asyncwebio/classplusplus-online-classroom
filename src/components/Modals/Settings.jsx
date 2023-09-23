@@ -26,9 +26,10 @@ const SettingsModal = ({ open, handleCancel }) => {
         if (res.ok) {
           const { data } = await res.json();
 
-          const { bbbServerUrl, bbbServerSecret } = data;
-          setBbbServerUrl(bbbServerUrl);
-          setBbbServerSecret(bbbServerSecret);
+          const bbbURL = data?.bbbServerUrl;
+          const bbbSecret = data?.bbbServerSecret;
+          setBbbServerUrl(bbbURL);
+          setBbbServerSecret(bbbSecret);
         }
       })
       .catch((err) => {
@@ -108,7 +109,7 @@ const SettingsModal = ({ open, handleCancel }) => {
               href="https://higheredlab.com/bigbluebutton"
               target="_blank"
             >
-             Don’t have a BigBlueButton server? Start Free Trial.
+              Don’t have a BigBlueButton server? Start Free Trial.
             </Typography.Link>
 
             <Space
