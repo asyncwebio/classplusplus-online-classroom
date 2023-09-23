@@ -154,7 +154,7 @@ function bbb_plugin_activation()
         // get wpdb charset
         $charset_collate = $wpdb->get_charset_collate();
 
-        $sql .= ") ENGINE=MyISAM DEFAULT CHARSET=$charset_collate AUTO_INCREMENT=1;";
+        $sql .= ")";
 
         // Include Upgrade Script
         require_once(ABSPATH . '/wp-admin/includes/upgrade.php');
