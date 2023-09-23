@@ -6,6 +6,12 @@
 **BigBlueButton Online Class** is a WordPress plugin that provides seamless integration with BigBlueButton for managing online classes. It simplifies the process of setting up virtual classrooms and allows users to access class recordings with ease. This plugin is designed to be simple and efficient, without any unnecessary features or bloat.
 </div>
 
+
+BigBlueButton Online Class:
+
+[![BigBlueButton Online Class](https://i.stack.imgur.com/Vp2cE.png)](https://higheredlab.com/wp-content/uploads/bbb-wordpress-howto.mp4)
+
+
 ## Features
 
 - **BigBlueButton Integration:** Easily connect your WordPress website with BigBlueButton for hosting online classes.
