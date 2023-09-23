@@ -32,7 +32,7 @@ https://github.com/AsyncWeb/bigbluebutton-wordpress-plugin/assets/77152354/0f88b
 
 ### Manually
 
-1. Download the `bbb-online-class.zip` from release.
+1. Download the `bbb-online-class.zip` from [releases](https://github.com/AsyncWeb/bigbluebutton-wordpress-plugin/releases).
 2. Upload the 'bbb-online-class' folder to the '/wp-content/plugins/' directory.
 3. Activate the 'BigBlueButton Online Class' plugin through the 'Plugins' menu in WordPress.
 4. Go to 'Setup & Usage' below.
