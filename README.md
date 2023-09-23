@@ -56,7 +56,7 @@ https://github.com/AsyncWeb/bigbluebutton-wordpress-plugin/assets/77152354/0f88b
 
 ### How can I access class recordings?
 
-Class recordings can be accessed by Teachers through your WordPress Admin dashboard. Once you've set up your online classes and started recording, Teachers can navigate to the WordPress Admin dashboard > BigBlue Button and click on more options (three dots) on the class they want to view recording. Click on 'Recordings' to view the recording.
+Class recordings can be accessed by Teachers through your WordPress Admin dashboard. Once you've set up your online classes and started recording, Teachers can navigate to the WordPress Admin dashboard > BigBlueButton and click on more options (three dots) on the class they want to view recording. Click on 'Recordings' to view the recording.
 
 ### Can I customize the appearance of the virtual classroom?
 
