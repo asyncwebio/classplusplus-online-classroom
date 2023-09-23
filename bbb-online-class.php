@@ -188,7 +188,7 @@ function bbb_plugin_uninstall_cleanup()
  * Initi api endpoint to save bbb settings
  */
 
-function create_api_endpoint()
+function bbb_create_api_endpoint()
 {
     global $current_logged_in_wp_user;
     $data = wp_get_current_user();
@@ -294,7 +294,7 @@ function create_api_endpoint()
         )
     );
 }
-add_action('rest_api_init', 'create_api_endpoint');
+add_action('rest_api_init', 'bbb_create_api_endpoint');
 
 
 function handle_save_settings_request(WP_REST_Request $request)
