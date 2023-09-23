@@ -9,7 +9,9 @@
 
 BigBlueButton Online Class:
 
-[![BigBlueButton Online Class](https://i.stack.imgur.com/Vp2cE.png)](https://higheredlab.com/wp-content/uploads/bbb-wordpress-howto.mp4)
+https://github.com/AsyncWeb/bigbluebutton-wordpress-plugin/assets/77152354/1ebc91e9-f6d0-4430-8060-c93918b8bd6b
+
+
 
 
 ## Features
