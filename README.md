@@ -36,7 +36,7 @@ Experience this transformative plugin today. Elevate your virtual teaching exper
 
 <br/><br/>
 
-## 💡 5 Benefits: Elevate Education with BigBlueButton Wordpress Plugin
+## 💡 6 Benefits: Elevate Education with BigBlueButton Wordpress Plugin
 1. 🌐 **Seamless Integration**: Directly integrate BigBlueButton with Wordpress, one of the world's most popular website platforms, ensuring a smooth experience for both educators and students.
 2. 🎓 **Empowered Teaching**: With a plethora of features, educators have the tools they need to deliver effective and engaging online lessons.
 3. 💸 **Budget-Friendly**: Being free forever, the BigBlueButton Wordpress Plugin ensures that quality education doesn't come with a hefty price tag.
