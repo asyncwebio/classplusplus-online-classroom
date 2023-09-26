@@ -24,20 +24,27 @@ It's not just about functionality; it's about simplicity. With an intuitive inte
 Experience this transformative plugin today. Elevate your virtual teaching experience with the BigBlueButton Wordpress Plugin, because when it comes to education, simplicity and efficiency matter.
 </p>
 
+<br/><br/>
 
+## 🗝️ Unlock Limitless Learning: Key Features of BigBlueButton Wordpress Plugin
+1. 🏫 **Unlimited Classroom Creation**: Effortlessly set up as many virtual classrooms as you need, catering to diverse subjects and batches of students.
+2. 🛠️ **Comprehensive Classroom Configuration**: From setting up access codes and uploading presentations to enabling class recordings, get complete control over your virtual classroom settings.
+3. 🎨 **Branding Customization**: Personalize your virtual classroom experience by specifying your logo, redirecting users post-logout, and even customizing primary colors and welcome messages.
+4. ⚙️ **Advanced Settings Control**: Opt for skipping audio checks, disabling listen-only mode, changing class layouts, and specifying additional meta parameters as per your teaching preferences.
+5. 📼 **Easy Access to Recordings**: Ensure students can revisit lessons by providing them with easy access to class recordings.
+6. 📩 **Smart Invite URLs**: Personalize the classroom entry experience with URLs that automatically fetch user details or allow for custom inputs.
 
+<br/><br/>
 
+## 💡 5 Benefits: Elevate Education with BigBlueButton Wordpress Plugin
+1. 🌐 **Seamless Integration**: Directly integrate BigBlueButton with Wordpress, one of the world's most popular website platforms, ensuring a smooth experience for both educators and students.
+2. 🎓 **Empowered Teaching**: With a plethora of features, educators have the tools they need to deliver effective and engaging online lessons.
+3. 💸 **Budget-Friendly**: Being free forever, the BigBlueButton Wordpress Plugin ensures that quality education doesn't come with a hefty price tag.
+4. 🎨 **Personalized Branding**: Institutions can ensure their virtual classrooms resonate with their brand identity, fostering a sense of belonging among students.
+5. 🔄 **Flexibility in Classroom Management**: From configuring advanced settings to setting up access codes, educators have the flexibility to manage their classrooms as they see fit.
+6. 🤝 **Enhanced User Experience**: With smart invite URLs and easy access to recordings, students enjoy a user-friendly and personalized virtual learning environment.
 
-
-
-
-
-
-## Features
-
-- **BigBlueButton Integration:** Easily connect your WordPress website with BigBlueButton for hosting online classes.
-- **Class Management:** Manage your online classes directly from your WordPress dashboard.
-- **View Recordings:** Users can access class recordings conveniently through the plugin.
+<br/><br/>
 
 ## Installation
 
