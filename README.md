@@ -7,7 +7,6 @@
 BigBlueButton Wordpress Plugin - Your free, comprehensive solution to streamline your virtual classroom management on Wordpress. Seamlessly integrate with BigBlueButton, set up classes, and access recordings effortlessly. No more technical hassles - teach with simplicity and efficiency.
 </p>
 
-
 https://github.com/AsyncWeb/bigbluebutton-wordpress-plugin/assets/77152354/0f88ba18-921e-4fa6-9c87-bd4da2e8a37a
 
 <p>
@@ -71,6 +70,8 @@ Experience this transformative plugin today. Elevate your virtual teaching exper
    2. Click on 'Recordings' to view the recording.
    3. Note: Recording will be available only if the class is recorded.
 
+<br/><br/>
+
 ## Frequently Asked Questions
 
 ### How can I access class recordings?
@@ -81,6 +82,7 @@ Class recordings can be accessed by Teachers through your WordPress Admin dashbo
 
 You can use the branding section to customize the appearance of the virtual classroom. You can add your logo, primary color, logout URL, and welcome message.
 
+<br/><br/>
 
 ## Support
 
