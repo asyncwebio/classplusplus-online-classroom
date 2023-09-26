@@ -1,16 +1,33 @@
-
 <div align="center">
-   
-   # BigBlueButton Online Class
-
-**BigBlueButton Online Class** is a WordPress plugin that provides seamless integration with BigBlueButton for managing online classes. It simplifies the process of setting up virtual classrooms and allows users to access class recordings with ease. This plugin is designed to be simple and efficient, without any unnecessary features or bloat.
+ <a href="https://higheredlab.com/" target="_blank"> <img alt="bbb-streaming" width="250" src="https://github.com/AsyncWeb/bigbluebutton-streaming/raw/master/static/hel-general-logo.png"> </a>
 </div>
+<h1 align="center">BigBlueButton Wordpress Plugin</h1>
 
-
-BigBlueButton Online Class:
+<p align="center">
+BigBlueButton Wordpress Plugin - Your free, comprehensive solution to streamline your virtual classroom management on Wordpress. Seamlessly integrate with BigBlueButton, set up classes, and access recordings effortlessly. No more technical hassles - teach with simplicity and efficiency.
+</p>
 
 
 https://github.com/AsyncWeb/bigbluebutton-wordpress-plugin/assets/77152354/0f88ba18-921e-4fa6-9c87-bd4da2e8a37a
+
+<p>
+Dive into a seamless virtual teaching experience with the BigBlueButton Wordpress Plugin, the definitive tool for your online classroom needs on Wordpress. Crafted as a free forever software, this plugin empowers educators to effortlessly set up, manage, and access their virtual classrooms.
+
+BigBlueButton, renowned as a premier open-source virtual classroom software, is embraced by numerous educators and institutions globally. Yet, the challenge has always been its integration with popular platforms like Wordpress. That's where our plugin bridges the gap.
+
+Introducing the BigBlueButton Wordpress Plugin, your gateway to creating unlimited classrooms, configuring advanced settings, and even customizing branding to resonate with your institution's identity. Whether it's setting up an access code, uploading a presentation, enabling class recordings, or even specifying your logo and welcome message – everything is just a few clicks away.
+
+What's more? The smart invite URLs ensure a personalized touch. When embedded from a logged-in page, the invite URL automatically fetches the logged-in user's name and photo. And for logged-out pages? Simply pass a custom username and access code.
+
+It's not just about functionality; it's about simplicity. With an intuitive interface devoid of unnecessary bloat, this plugin ensures that educators can focus on what they do best - teach.
+
+Experience this transformative plugin today. Elevate your virtual teaching experience with the BigBlueButton Wordpress Plugin, because when it comes to education, simplicity and efficiency matter.
+</p>
+
+
+
+
+
 
 
 
