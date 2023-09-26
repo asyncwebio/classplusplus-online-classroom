@@ -24,6 +24,8 @@ It's not just about functionality; it's about simplicity. With an intuitive inte
 Experience this transformative plugin today. Elevate your virtual teaching experience with the BigBlueButton Wordpress Plugin, because when it comes to education, simplicity and efficiency matter.
 </p>
 
+<br/><br/>
+
 ## 🗝️ Unlock Limitless Learning: Key Features of BigBlueButton Wordpress Plugin
 1. 🏫 **Unlimited Classroom Creation**: Effortlessly set up as many virtual classrooms as you need, catering to diverse subjects and batches of students.
 2. 🛠️ **Comprehensive Classroom Configuration**: From setting up access codes and uploading presentations to enabling class recordings, get complete control over your virtual classroom settings.
@@ -32,6 +34,7 @@ Experience this transformative plugin today. Elevate your virtual teaching exper
 5. 📼 **Easy Access to Recordings**: Ensure students can revisit lessons by providing them with easy access to class recordings.
 6. 📩 **Smart Invite URLs**: Personalize the classroom entry experience with URLs that automatically fetch user details or allow for custom inputs.
 
+<br/><br/>
 
 ## 💡 6 Benefits: Elevate Education with BigBlueButton Wordpress Plugin
 1. 🌐 **Seamless Integration**: Directly integrate BigBlueButton with Wordpress, one of the world's most popular website platforms, ensuring a smooth experience for both educators and students.
@@ -41,12 +44,16 @@ Experience this transformative plugin today. Elevate your virtual teaching exper
 5. 🔄 **Flexibility in Classroom Management**: From configuring advanced settings to setting up access codes, educators have the flexibility to manage their classrooms as they see fit.
 6. 🤝 **Enhanced User Experience**: With smart invite URLs and easy access to recordings, students enjoy a user-friendly and personalized virtual learning environment.
 
+<br/><br/>
+
 ## Installation
 
 1. Download the `bbb-online-class.zip` from [releases](https://github.com/AsyncWeb/bigbluebutton-wordpress-plugin/releases).
 2. Upload the 'bbb-online-class' folder to the '/wp-content/plugins/' directory.
 3. Activate the 'BigBlueButton Online Class' plugin through the 'Plugins' menu in WordPress.
 4. Go to 'Setup & Usage' below.
+
+<br/><br/>
 
 ## Setup & Usage
 
