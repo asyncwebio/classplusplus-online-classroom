@@ -48,14 +48,6 @@ Experience this transformative plugin today. Elevate your virtual teaching exper
 
 ## Installation
 
-1. Visit 'Plugin > Add New'.
-2. Search for 'BigBlueButton Online Class'.
-3. Install 'BigBlueButton Online Class' once it appears.
-4. Activate 'BigBlueButton Online Class' from your Plugins page.
-5. Go to 'Setup & Usage' below.
-
-### Manually
-
 1. Download the `bbb-online-class.zip` from [releases](https://github.com/AsyncWeb/bigbluebutton-wordpress-plugin/releases).
 2. Upload the 'bbb-online-class' folder to the '/wp-content/plugins/' directory.
 3. Activate the 'BigBlueButton Online Class' plugin through the 'Plugins' menu in WordPress.
