@@ -86,5 +86,5 @@ You can use the branding section to customize the appearance of the virtual clas
 
 ## Support
 
-For support or feature requests, please contact [https://higheredlab.com/contact](https://higheredlab.com/contact).
+For support or feature requests, please [contact us](https://higheredlab.com/contact).
 
