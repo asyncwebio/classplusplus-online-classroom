@@ -1,4 +1,5 @@
 <?php
+// phpcs:disable
 
 $rest_url = get_rest_url();
 $delimiter = str_contains($rest_url, '/wp-json/') ? '?' : '&';
