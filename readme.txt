@@ -9,12 +9,12 @@ Requires PHP:      7.4
 License:           GPLv3 or later
 License URI:       https://www.gnu.org/licenses/gpl-3.0.txt
 
-BigBlueButton WordPress Plugin: Empowering Your Online Classes and Meetings
+Class++: The ultimate BigBlueButton WordPress plugin for online classes
 
 == Description ==
 
-### BigBlueButton WordPress Plugin ###
-**Elevate your online teaching and meeting experience with the BigBlueButton WordPress Plugin – where functionality meets flexibility.**
+### Class++: BigBlueButton WordPress Plugin ###
+**Elevate your online teaching and meeting experience with Class++, the ultimate BigBlueButton WordPress Plugin, where functionality meets flexibility.**
 ★★★★★<br>
 
 Transform your WordPress site into a dynamic virtual classroom or meeting space with the BigBlueButton WordPress Plugin. This powerful, user-friendly plugin integrates seamlessly with BigBlueButton, the most popular open-source online classroom platform, offering a comprehensive solution for educators, trainers, and professionals to conduct engaging and interactive online sessions. With easy configuration for both self-hosted and third-party BigBlueButton servers, the plugin offers a range of features to enhance your online teaching or meeting experience.
