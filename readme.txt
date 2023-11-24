@@ -1,6 +1,6 @@
-=== BigBlueButton Online Classroom ===
-Contributors:      AsyncWeb Technology
-Plugin link:       https://higheredlab.com/bigbluebutton
+=== Class++ ===
+Contributors:      HigherEdLab.com
+Plugin link:       https://higheredlab.com/
 Tags:              BigBlueButton, Online Class, bbb
 Tested up to:      6.2.2
 Stable tag:        1.0.1
