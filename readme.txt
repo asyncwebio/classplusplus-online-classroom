@@ -9,15 +9,28 @@ Requires PHP:      7.4
 License:           GPLv3 or later
 License URI:       https://www.gnu.org/licenses/gpl-3.0.txt
 
-BlueButton Online Class: Seamless integration of BigBlueButton with WordPress.
+BigBlueButton WordPress Plugin: Empowering Your Online Classes and Meetings
 
 == Description ==
 
-### BigBlueButton Online Classroom ###
-**Easily integrate BigBlueButton into your WordPress site**
+### BigBlueButton WordPress Plugin ###
+**Elevate your online teaching and meeting experience with the BigBlueButton WordPress Plugin – where functionality meets flexibility.**
 ★★★★★<br>
 
-The BigBlueButton WordPress Plugin seamlessly integrates BigBlueButton, the most popular open-source online classroom platform, with your WordPress site. This plugin is ideal for educators, trainers, and anyone who needs to deliver classes or meetings online. With easy configuration for both self-hosted and third-party BigBlueButton servers, the plugin offers a range of features to enhance your online teaching or meeting experience.
+Transform your WordPress site into a dynamic virtual classroom or meeting space with the BigBlueButton WordPress Plugin. This powerful, user-friendly plugin integrates seamlessly with BigBlueButton, the most popular open-source online classroom platform, offering a comprehensive solution for educators, trainers, and professionals to conduct engaging and interactive online sessions. With easy configuration for both self-hosted and third-party BigBlueButton servers, the plugin offers a range of features to enhance your online teaching or meeting experience.
+
+Here's how the BigBlueButton WordPress Plugin benefits your online engagement:
+
+- **Ease of Integration:** Seamlessly connect with any self-hosted or third-party BigBlueButton server. The simple setup process ensures you're up and running in no time, making it an ideal solution regardless of your technical expertise.
+- **Unlimited Flexibility in Class Creation:** Break free from limitations with the ability to create an unlimited number of classes. Cater to diverse groups and sessions without the worry of hitting a cap on your class count.
+- **Instant Access to Start Classes:** Launch your online sessions with just a single click. This feature simplifies the process of beginning a class, saving valuable time and effort.
+- **Effortless Invitation Process:** Share meeting URLs easily for quick participant join-ins. The plugin enables URL integration in user account pages, adding a personalized touch by including the user's name as a parameter.
+- **On-Demand Access to Recordings:** Review and revisit your classes with ease. Access all class recordings effortlessly, making it a valuable resource for attendees who wish to review past sessions.
+- **Comprehensive Customization:** Tailor your virtual classroom to your specific needs. Customize class names, secure classes with access codes, and personalize with custom presentation URLs. Enable features like recording, moderator approvals, and private chats to enhance user interaction and security.
+- **Branding and Personalization:** Strengthen your brand identity with custom logos, welcome messages, and theme colors. Redirect attendees to a custom logout page, ensuring a consistent and professional experience from start to finish.
+- **Versatile Layout Options:** Choose from video-focused, presentation-focused, or hybrid layouts to best suit the nature of your class or meeting.
+- **Lightweight and Performance-Oriented:** Designed to be lightweight, the plugin ensures your website’s performance remains smooth and efficient, with no adverse impact on loading times.
+- **Dedicated Support and Development:** Encounter an issue? Our dedicated support team at support@higheredlab.com is ready to assist you. Plus, with regular updates, the plugin keeps pace with the latest WordPress versions and user needs.
 
 
 == Features ==
