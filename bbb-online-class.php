@@ -1,21 +1,21 @@
 <?php
 /**
- * Plugin Name:       BigBlueButton Online Class
- * Description:       Seamless integration with BigBlueButton
+ * Plugin Name:       Class++: AI-powered Online Classrooms
+ * Description:       AI-powered Online Classrooms that improve learning and reduce drop-offs
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * php version        7.0
- * Version:           0.1.0
- * Author:            Asyncweb technologies
+ * Version:           1.0.1
+ * Author:            HigherEdLab.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       bbb-online-classroom
+ * Text Domain:       classplusplus-online-classroom
  *
  * @category Plugin
  *
- * @package Bbbonlineclassroom
+ * @package Cpponlineclassroom
  *
- * @author BigBlueButton Online Class <manish.katyan@higheredlab.com>
+ * @author Classplusplus Online Class <manish.katyan@higheredlab.com>
  *
  * @license GPL-2.0-or-later https://www.gnu.org/licenses/gpl-2.0.html
  *
@@ -26,30 +26,30 @@
 
 global $current_logged_in_wp_user;
 
-add_action( 'admin_menu', 'bbb_init_menu' );
+add_action( 'admin_menu', 'cpp_init_menu' );
 
 /**
  * Init Admin Menu.
  *
  * @return void
  */
-function bbb_init_menu() {
+function cpp_init_menu() {
 	// phpcs:disable
-	add_menu_page( __( 'BigBlueButton', 'bbb' ), __( 'BigBlueButton', 'bbb' ), 'manage_options', 'bbb', 'Bbb_Admin_page', 'dashicons-welcome-learn-more', '2.1' );
+	add_menu_page( __( 'Class++', 'cpp' ), __( 'Class++', 'cpp' ), 'manage_options', 'cpp', 'cpp_admin_page', 'dashicons-welcome-learn-more', '2.1' );
 
 }
 
 
-add_action( 'admin_init', 'Register_Bbb_Plugin_settings' );
+add_action( 'admin_init', 'register_cpp_plugin_settings' );
 
 /**
  * Add Site meta to store bbb settings
  *
  * @return void
  */
-function Register_Bbb_Plugin_settings() {
+function register_cpp_plugin_settings() {
 	// Register the settings
-	register_setting( 'bbb-plugin-settings', 'bbb_settings' );
+	register_setting( 'cpp-plugin-settings', 'cpp_settings' );
 }
 
 /**
@@ -57,20 +57,20 @@ function Register_Bbb_Plugin_settings() {
  *
  * @return void
  */
-function Bbb_Admin_page() {
+function cpp_admin_page() {
 	// phpcs:disable
 	require_once plugin_dir_path( __FILE__ ) . 'templates/app.php';
 }
 
 
-add_action( 'admin_enqueue_scripts', 'Bbb_Admin_Enqueue_scripts' );
+add_action( 'admin_enqueue_scripts', 'cpp_admin_enqueue_scripts' );
 
 /**
  * Enqueue scripts and styles.
  *
  * @return void
  */
-function Bbb_Admin_Enqueue_scripts() {
+function cpp_admin_enqueue_scripts() {
 	wp_enqueue_style( 'bbb-style', plugin_dir_url( __FILE__ ) . 'build/index.css' );
 	wp_enqueue_script( 'bbb-script', plugin_dir_url( __FILE__ ) . 'build/index.js', array( 'wp-element' ), '1.0.0', true );
 }
@@ -78,14 +78,14 @@ function Bbb_Admin_Enqueue_scripts() {
 
 
 
-register_activation_hook( __FILE__, "Bbb_Plugin_activation" );
+register_activation_hook( __FILE__, "cpp_plugin_activation" );
 
 /**
  * On plugin activation create a  db table
  *
  * @return void
  */
-function Bbb_Plugin_activation() {
+function cpp_plugin_activation() {
 
 
 	// Insert DB Tables
@@ -93,14 +93,14 @@ function Bbb_Plugin_activation() {
 	global $table_prefix, $wpdb;
 
 	// Customer Table
-	$bbb_online_classroom = $table_prefix . 'bbb_online_classroom';
+	$cpp_online_classroom = $table_prefix . 'cpp_online_classroom';
 
-	error_log( "====== Trying to add table $bbb_online_classroom ======" );
+	error_log( "====== Trying to add table $cpp_online_classroom ======" );
 	// Create Customer Table if not exist
-	if ( $wpdb->get_var( "show tables like '$bbb_online_classroom'" ) != $bbb_online_classroom ) {
+	if ( $wpdb->get_var( "show tables like '$cpp_online_classroom'" ) != $cpp_online_classroom ) {
 
 		// Query - Create Table
-		$sql = "CREATE TABLE `$bbb_online_classroom` (";
+		$sql = "CREATE TABLE `$cpp_online_classroom` (";
 		$sql .= " `id` int(11) NOT NULL auto_increment, ";
 		$sql .= " `name` varchar(500) NOT NULL, ";
 		$sql .= " `bbb_id` varchar(500) NOT NULL, ";
@@ -173,28 +173,33 @@ function Bbb_Plugin_activation() {
 		// Create Table
 		dbDelta( $sql );
 
-		error_log( "====== Table $bbb_online_classroom created ======" );
+		error_log( "====== Table $cpp_online_classroom created ======" );
 	} else {
-		error_log( "====== Table $bbb_online_classroom already exists ======" );
+		error_log( "====== Table $cpp_online_classroom already exists ======" );
 	}
 }
 
 
 
 
-register_uninstall_hook( __FILE__, "Bbb_Plugin_Uninstall_cleanup" );
+// Register uninstall hook
+register_uninstall_hook( __FILE__, 'cpp_plugin_uninstall_cleanup' );
 
 /**
- * On plugin uninstall drop the db table
- *
- * @return void
+ * On plugin uninstall, drop the db table.
  */
-function Bbb_Plugin_Uninstall_cleanup() {
-	global $wpdb;
-	$bbb_online_classroom = $wpdb->prefix . 'bbb_online_classroom';
-	error_log( "====== BigBlueButton online classroom plugin uninstalled. Deleting Table $bbb_online_classroom ======" );
-	$wpdb->query( "DROP TABLE IF EXISTS $bbb_online_classroom" );
+function cpp_plugin_uninstall_cleanup() {
+    global $wpdb;
+
+    // Table Name
+    $table_name = $wpdb->prefix . 'cpp_online_classroom';
+
+    error_log( "====== BigBlueButton online classroom plugin uninstalled. Deleting Table $table_name ======" );
+
+    // Drop the table if it exists
+    $wpdb->query( "DROP TABLE IF EXISTS $table_name" );
 }
+
 
 
 /**
@@ -203,29 +208,29 @@ function Bbb_Plugin_Uninstall_cleanup() {
  * @return void
  */
 
-function Bbb_Create_Api_endpoint() {
+function cpp_create_api_endpoint() {
 	global $current_logged_in_wp_user;
 	$data = wp_get_current_user();
 	$current_logged_in_wp_user = clone $data;
 
 	// route for getting settings
 	register_rest_route(
-		'bbb-online-classroom/v1',
+		'cpp-online-classroom/v1',
 		'/get-settings/',
 		array(
 			'methods' => 'GET',
-			'callback' => 'Bbb_Handle_Get_Settings_request',
+			'callback' => 'cpp_get_settings_request',
 			'permission_callback' => '__return_true',
 		)
 	);
 
 	// route for saving settings
 	register_rest_route(
-		'bbb-online-classroom/v1',
+		'cpp-online-classroom/v1',
 		'/save-settings/',
 		array(
 			'methods' => 'POST',
-			'callback' => 'Bbb_Handle_Save_Settings_request',
+			'callback' => 'cpp_save_settings_request',
 			'permission_callback' => '__return_true',
 		)
 	);
@@ -233,96 +238,96 @@ function Bbb_Create_Api_endpoint() {
 	// route for getting classes
 
 	register_rest_route(
-		'bbb-online-classroom/v1',
+		'cpp-online-classroom/v1',
 		'/get-classes/',
 		array(
 			'methods' => 'GET',
-			'callback' => 'Bbb_Handle_Get_Classes_request',
+			'callback' => 'cpp_get_classes_request',
 			'permission_callback' => '__return_true',
 		)
 	);
 
 	// route for creating a new class
 	register_rest_route(
-		'bbb-online-classroom/v1',
+		'cpp-online-classroom/v1',
 		'/create-class/',
 		array(
 			'methods' => 'POST',
-			'callback' => 'Bbb_Handle_Create_Class_request',
+			'callback' => 'cpp_create_class_request',
 			'permission_callback' => '__return_true',
 		)
 	);
 
 	// route for editing a class
 	register_rest_route(
-		'bbb-online-classroom/v1',
+		'cpp-online-classroom/v1',
 		'/edit-class/',
 		array(
 			'methods' => 'POST',
-			'callback' => 'Bbb_Handle_Edit_Class_request',
+			'callback' => 'cpp_edit_class_request',
 			'permission_callback' => '__return_true',
 		)
 	);
 
 	// route for deleting a class
 	register_rest_route(
-		'bbb-online-classroom/v1',
+		'cpp-online-classroom/v1',
 		'/delete-class/',
 		array(
 			'methods' => 'DELETE',
-			'callback' => 'Bbb_Handle_Delete_Class_request',
+			'callback' => 'cpp_delete_class_request',
 			'permission_callback' => '__return_true',
 		)
 	);
 
 	// route for starting a class
 	register_rest_route(
-		'bbb-online-classroom/v1',
+		'cpp-online-classroom/v1',
 		'/start-class/',
 		array(
 			'methods' => 'POST',
-			'callback' => 'Bbb_Handle_Start_Class_request',
+			'callback' => 'cpp_start_class_request',
 			'permission_callback' => '__return_true',
 		)
 	);
 
 	// route for joing a class
 	register_rest_route(
-		'bbb-online-classroom/v1',
+		'cpp-online-classroom/v1',
 		'/join-class/',
 		array(
 			'methods' => 'GET',
-			'callback' => 'Bbb_Handle_Join_Class_request',
+			'callback' => 'cpp_join_class_request',
 			'permission_callback' => '__return_true',
 		)
 	);
 
 	// route for getting a class recording
 	register_rest_route(
-		'bbb-online-classroom/v1',
+		'cpp-online-classroom/v1',
 		'/get-recordings/',
 		array(
 			'methods' => 'GET',
-			'callback' => 'Bbb_Handle_Get_Recording_request',
+			'callback' => 'cpp_get_recording_request',
 			'permission_callback' => '__return_true',
 		)
 	);
 }
-add_action( 'rest_api_init', 'Bbb_Create_Api_endpoint' );
+add_action( 'rest_api_init', 'cpp_create_api_endpoint' );
 
 
 
 /**
- *  Save bbb settings
+ * Save BBB settings.
  *
- * @param WP_REST_Request $request wordpress rest request object
+ * @param WP_REST_Request $request WordPress REST request object.
  *
- * @return WP_REST_Response $payload response object
+ * @return WP_REST_Response $payload Response object.
  */
-function Bbb_Handle_Save_Settings_request( WP_REST_Request $request ) {
+function cpp_save_settings_request( WP_REST_Request $request ) {
 	$request_body = file_get_contents( 'php://input' );
 	$settings = sanitize_text_field( $request_body );
-	update_option( 'bbb_settings', $settings );
+	update_option( 'cpp_settings', $settings );
 	// payload object
 	$payload = array(
 		"data" => $settings,
@@ -331,15 +336,16 @@ function Bbb_Handle_Save_Settings_request( WP_REST_Request $request ) {
 }
 
 
+
 /**
- * Get bbb settings
+ * Get BBB settings.
  *
- * @param WP_REST_Request $request wordpress rest request object
+ * @param WP_REST_Request $request WordPress REST request object.
  *
- * @return WP_REST_Response $payload response object
+ * @return WP_REST_Response $payload Response object.
  */
-function Bbb_Handle_Get_Settings_request( WP_REST_Request $request ) {
-	$settings = sanitize_text_field( get_option( 'bbb_settings' ) );
+function cpp_get_settings_request( WP_REST_Request $request ) {
+	$settings = sanitize_text_field( get_option( 'cpp_settings' ) );
 	// payload object
 	$payload = array(
 		"data" => json_decode( $settings ),
@@ -348,32 +354,39 @@ function Bbb_Handle_Get_Settings_request( WP_REST_Request $request ) {
 	return rest_ensure_response( $payload );
 }
 
+
 /**
- * Handle get class
+ * Handle get class.
  *
- * @param WP_REST_Request $request wordpress rest request object
+ * @param WP_REST_Request $request WordPress REST request object.
  *
- * @return WP_REST_Response $payload response object
+ * @return WP_REST_Response $payload Response object.
  */
-function Bbb_Handle_Get_Classes_request( WP_REST_Request $request ) {
+function cpp_get_classes_request( WP_REST_Request $request ) {
 	global $wpdb;
-	// check if url query parm id is present?
-	$id = sanitize_text_field( $request->get_param( 'id' ) );
-	$bbb_online_classroom = $wpdb->prefix . 'bbb_online_classroom';
-	// set null value
+	// Check if URL query param 'id' is present.
+	$id = absint( $request->get_param( 'id' ) );
+
+	$cpp_online_classroom = $wpdb->prefix . 'cpp_online_classroom';
+	// Set null value.
 	$classes = null;
+
 	if ( $id ) {
-		$classes = $wpdb->get_results( "SELECT * FROM $bbb_online_classroom WHERE id = $id" );
+		// Use prepared statement to prevent SQL injection.
+		$classes = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $cpp_online_classroom WHERE id = %d", $id ) );
 	} else {
-		// oder by updated_at desc
-		$classes = $wpdb->get_results( "SELECT * FROM $bbb_online_classroom ORDER BY updated_at DESC" );
+		// Order by updated_at desc.
+		$classes = $wpdb->get_results( "SELECT * FROM $cpp_online_classroom ORDER BY updated_at DESC" );
 	}
-	// payload object
+
+	// Payload object.
 	$payload = array(
-		"data" => $classes,
+		'data' => $classes,
 	);
+
 	return rest_ensure_response( $payload );
 }
+
 
 /**
  * Handle Create class request
@@ -382,7 +395,7 @@ function Bbb_Handle_Get_Classes_request( WP_REST_Request $request ) {
  *
  * @return WP_REST_Response $payload response object
  */
-function Bbb_Handle_Create_Class_request( WP_REST_Request $request ) {
+function cpp_create_class_request( WP_REST_Request $request ) {
 	$request_body = file_get_contents( 'php://input' );
 	$class_data = sanitize_text_field( $request_body );
 	$class_data = json_decode( $class_data );
@@ -404,7 +417,7 @@ function Bbb_Handle_Create_Class_request( WP_REST_Request $request ) {
 	$enable_user_private_chats = $class_data->enable_user_private_chats;
 	$class_layout = $class_data->class_layout;
 	$additional_join_params = $class_data->additional_join_params;
-	$class = Add_Bbb_class(
+	$class = add_cpp_class(
 		array(
 			'name' => $name,
 			'bbb_id' => $bbb_id,
@@ -436,26 +449,34 @@ function Bbb_Handle_Create_Class_request( WP_REST_Request $request ) {
 
 
 /**
- * Handle  delete class request
+ * Handle delete class request.
  *
- * @param WP_REST_Request $request wordpress rest request object
+ * @param WP_REST_Request $request WordPress REST request object.
  *
- * @return WP_REST_Response $payload response object
+ * @return WP_REST_Response|WP_Error $response Response object or error.
  */
-function Bbb_Handle_Delete_Class_request( WP_REST_Request $request ) {
-
+function cpp_delete_class_request( WP_REST_Request $request ) {
 	global $wpdb;
-	$id = sanitize_text_field( $request->get_param( 'id' ) );
-	// give bad request if id is not present
-	if ( ! $id ) {
-		return new WP_Error( 'bad_request', 'id is required', array( 'status' => 400 ) );
-	}
-	$bbb_online_classroom = $wpdb->prefix . 'bbb_online_classroom';
-	$wpdb->delete( $bbb_online_classroom, array( 'id' => $id ) );
 
-	// return 200 response
-	return new WP_REST_Response( null, 200 );
+	$id = absint( $request->get_param( 'id' ) );
+
+	// Check if the ID is empty.
+	if ( empty( $id ) ) {
+		return new WP_Error( 'bad_request', 'ID is required', array( 'status' => 400 ) );
+	}
+
+	$cpp_online_classroom = $wpdb->prefix . 'cpp_online_classroom';
+	$result = $wpdb->delete( $cpp_online_classroom, array( 'id' => $id ) );
+
+	// Check if the delete operation was successful.
+	if ( false === $result ) {
+		return new WP_Error( 'delete_error', 'Error deleting class', array( 'status' => 500 ) );
+	}
+
+	// Return 200 response.
+	return rest_ensure_response( null )->set_status( 200 );
 }
+
 
 /**
  * Handle edit class request
@@ -464,9 +485,9 @@ function Bbb_Handle_Delete_Class_request( WP_REST_Request $request ) {
  *
  * @return WP_REST_Response $payload response object
  */
-function Bbb_Handle_Edit_Class_request( WP_REST_Request $request ) {
+function cpp_edit_class_request( WP_REST_Request $request ) {
 	global $wpdb;
-	$bbb_online_classroom = $wpdb->prefix . 'bbb_online_classroom';
+	$cpp_online_classroom = $wpdb->prefix . 'cpp_online_classroom';
 
 	$id = sanitize_text_field( $request->get_param( 'id' ) );
 
@@ -493,7 +514,7 @@ function Bbb_Handle_Edit_Class_request( WP_REST_Request $request ) {
 	$additional_join_params = $class_data->additional_join_params;
 
 	$wpdb->update(
-		$bbb_online_classroom,
+		$cpp_online_classroom,
 		array(
 			'name' => $name,
 			'record' => $record,
@@ -515,7 +536,8 @@ function Bbb_Handle_Edit_Class_request( WP_REST_Request $request ) {
 		),
 		array( 'id' => $id )
 	);
-	return new WP_REST_Response( null, 200 );
+	// Return 200 response.
+	return rest_ensure_response( null )->set_status( 200 );
 }
 
 /**
@@ -526,20 +548,20 @@ function Bbb_Handle_Edit_Class_request( WP_REST_Request $request ) {
  * @return WP_REST_Response $payload response object
  */
 
-function Bbb_Handle_Start_Class_request( WP_REST_Request $request ) {
+function cpp_start_class_request( WP_REST_Request $request ) {
 	global $wpdb;
 	global $current_logged_in_wp_user;
 
-	$bbb_online_classroom = $wpdb->prefix . 'bbb_online_classroom';
+	$cpp_online_classroom = $wpdb->prefix . 'cpp_online_classroom';
 	// get id from request
-	$id = sanitize_text_field( $request->get_param( 'id' ) );
+	$id = absint( $request->get_param( 'id' ) );
 
 	// get bbb settings
-	$settings = sanitize_text_field( get_option( 'bbb_settings' ) );
+	$settings = sanitize_text_field( get_option( 'cpp_settings' ) );
 	$settings = json_decode( $settings );
 	$bbb_url = $settings->bbbServerUrl;
 	$bbb_secret = $settings->bbbServerSecret;
-	$bbb_class = $wpdb->get_results( "SELECT * FROM $bbb_online_classroom WHERE id = $id" );
+	$bbb_class = $wpdb->get_results( "SELECT * FROM $cpp_online_classroom WHERE id = $id" );
 	$bbb_class = $bbb_class[0];
 	$create_meeting_params = array(
 		'name' => $bbb_class->name,
@@ -568,7 +590,7 @@ function Bbb_Handle_Start_Class_request( WP_REST_Request $request ) {
 	}
 
 	$query = http_build_query( $create_meeting_params );
-	$action_url = Get_Bbb_url( 'create', $query, $bbb_url, $bbb_secret );
+	$action_url = get_cpp_url( 'create', $query, $bbb_url, $bbb_secret );
 	$presentation = $bbb_class->presentation;
 	$presentation_body = "";
 
@@ -600,7 +622,7 @@ function Bbb_Handle_Start_Class_request( WP_REST_Request $request ) {
 
 	// update last session
 	$wpdb->update(
-		$bbb_online_classroom,
+		$cpp_online_classroom,
 		array(
 			'last_session' => current_time( 'mysql' ),
 			'sessions_count' => $bbb_class->sessions_count + 1,
@@ -691,7 +713,7 @@ function Bbb_Handle_Start_Class_request( WP_REST_Request $request ) {
 
 
 	$query = http_build_query( $join_meeting_params );
-	$action_url = Get_Bbb_url( 'join', $query, $bbb_url, $bbb_secret );
+	$action_url = get_cpp_url( 'join', $query, $bbb_url, $bbb_secret );
 
 	$payload = array(
 		"data" => $action_url,
@@ -707,23 +729,23 @@ function Bbb_Handle_Start_Class_request( WP_REST_Request $request ) {
  * @return WP_REST_Response $payload response object
  */
 
-function Bbb_Handle_Join_Class_request( WP_REST_Request $request ) {
+function cpp_join_class_request( WP_REST_Request $request ) {
 	global $wpdb;
 	global $current_logged_in_wp_user;
 
-	$bbb_online_classroom = $wpdb->prefix . 'bbb_online_classroom';
+	$cpp_online_classroom = $wpdb->prefix . 'cpp_online_classroom';
 	// get id from request
-	$id = sanitize_text_field( $request->get_param( 'id' ) );
+	$id = absint( $request->get_param( 'id' ) );
 	$join_name = sanitize_text_field( $request->get_param( 'join_name' ) );
 	$access_code = sanitize_text_field( $request->get_param( 'access_code' ) );
 
 
 	// get bbb settings
-	$settings = sanitize_text_field( get_option( 'bbb_settings' ) );
+	$settings = sanitize_text_field( get_option( 'cpp_settings' ) );
 	$settings = json_decode( $settings );
 	$bbb_url = $settings->bbbServerUrl;
 	$bbb_secret = $settings->bbbServerSecret;
-	$bbb_class = $wpdb->get_results( "SELECT * FROM $bbb_online_classroom WHERE id = $id" );
+	$bbb_class = $wpdb->get_results( "SELECT * FROM $cpp_online_classroom WHERE id = $id" );
 	$bbb_class = $bbb_class[0];
 
 	if ( $bbb_class->access_code && $bbb_class->access_code != $access_code ) {
@@ -807,7 +829,7 @@ function Bbb_Handle_Join_Class_request( WP_REST_Request $request ) {
 	}
 
 	$query = http_build_query( $join_meeting_params );
-	$action_url = Get_Bbb_url( 'join', $query, $bbb_url, $bbb_secret );
+	$action_url = get_cpp_url( 'join', $query, $bbb_url, $bbb_secret );
 	wp_redirect( $action_url );
 	exit;
 }
@@ -819,9 +841,9 @@ function Bbb_Handle_Join_Class_request( WP_REST_Request $request ) {
  *
  * @return WP_REST_Response $payload response object
  */
-function Bbb_Handle_Get_Recording_request( WP_REST_Request $request ) {
+function cpp_get_recording_request( WP_REST_Request $request ) {
 	// get bbb settings
-	$settings = sanitize_text_field( get_option( 'bbb_settings' ) );
+	$settings = sanitize_text_field( get_option( 'cpp_settings' ) );
 	$settings = json_decode( $settings );
 	$bbb_url = $settings->bbbServerUrl;
 	$bbb_secret = $settings->bbbServerSecret;
@@ -831,7 +853,7 @@ function Bbb_Handle_Get_Recording_request( WP_REST_Request $request ) {
 	);
 
 	$query = http_build_query( $get_recordings_params );
-	$action_url = Get_Bbb_url( 'getRecordings', $query, $bbb_url, $bbb_secret );
+	$action_url = get_cpp_url( 'getRecordings', $query, $bbb_url, $bbb_secret );
 	$response = wp_remote_get( $action_url );
 	$response = wp_remote_retrieve_body( $response );
 	$response = simplexml_load_string( $response );
@@ -859,7 +881,7 @@ function Bbb_Handle_Get_Recording_request( WP_REST_Request $request ) {
  *
  * @return string $url       bbb action url
  */
-function Get_Bbb_url( $action, $query, $bbb_url, $bbb_secret ) {
+function get_cpp_url( $action, $query, $bbb_url, $bbb_secret ) {
 	$checksum = sha1( $action . $query . $bbb_secret );
 
 	// if bbb_url is not ends with / then add it
@@ -872,21 +894,21 @@ function Get_Bbb_url( $action, $query, $bbb_url, $bbb_secret ) {
 
 
 /**
- * Create an entry in bbb_online_classroom table
+ * Create an entry in cpp_online_classroom table
  *
  * @param array $data class data
  *
  * @return array $newClass class data
  */
-function Add_Bbb_class( $data ) {
+function add_cpp_class( $data ) {
 	global $wpdb;
-	$bbb_online_classroom = $wpdb->prefix . 'bbb_online_classroom';
+	$cpp_online_classroom = $wpdb->prefix . 'cpp_online_classroom';
 	$wpdb->insert(
-		$bbb_online_classroom,
+		$cpp_online_classroom,
 		$data
 	);
 	$id = $wpdb->insert_id;
-	$newClass = $wpdb->get_results( "SELECT * FROM $bbb_online_classroom WHERE id = $id" );
+	$newClass = $wpdb->get_results( "SELECT * FROM $cpp_online_classroom WHERE id = $id" );
 	// return created class
 	return $newClass[0];
 }

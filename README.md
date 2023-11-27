@@ -1,7 +1,7 @@
 <div align="center">
  <a href="https://higheredlab.com/" target="_blank"> <img alt="bbb-streaming" width="250" src="https://github.com/AsyncWeb/bigbluebutton-streaming/raw/master/static/hel-general-logo.png"> </a>
 </div>
-<h1 align="center">BigBlueButton Wordpress Plugin</h1>
+<h1 align="center">Class++ Wordpress Plugin</h1>
 
 <p align="center">
 BigBlueButton Wordpress Plugin - Your free, comprehensive solution to streamline your virtual classroom management on Wordpress. Seamlessly integrate with BigBlueButton, set up classes, and access recordings effortlessly. No more technical hassles - teach with simplicity and efficiency.

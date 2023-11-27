@@ -101,12 +101,12 @@ const SettingsModal = ({ open, handleCancel }) => {
         ) : (
           <section>
             <Typography.Title level={5}>
-              BigBlueButton Settings
+              ClassPlusPlus Settings
             </Typography.Title>
 
             {/* Add a link Don’t have a BigBlueButton server? Get BigBlueButton at 40% lower cost */}
             <Typography.Link
-              href="https://higheredlab.com/bigbluebutton"
+              href="https://higheredlab.com/"
               target="_blank"
             >
               Don’t have a BigBlueButton server? Start Free Trial.
@@ -139,6 +139,7 @@ const SettingsModal = ({ open, handleCancel }) => {
                   onChange={(e) => setBbbServerSecret(e.target.value)}
                 />
               </div>
+              <label>You can also enter URL and Secret of any self-hosted or 3rd-party BigBlueButton server.</label>
             </Space>
           </section>
         )}
