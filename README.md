@@ -4,28 +4,28 @@
 <h1 align="center">Class++ Wordpress Plugin</h1>
 
 <p align="center">
-BigBlueButton Wordpress Plugin - Your free, comprehensive solution to streamline your virtual classroom management on Wordpress. Seamlessly integrate with BigBlueButton, set up classes, and access recordings effortlessly. No more technical hassles - teach with simplicity and efficiency.
+Class++ Wordpress Plugin - Your free, comprehensive solution to streamline your virtual classroom management on Wordpress. Seamlessly integrate with BigBlueButton, set up classes, and access recordings effortlessly. No more technical hassles - teach with simplicity and efficiency.
 </p>
 
 https://github.com/AsyncWeb/bigbluebutton-wordpress-plugin/assets/77152354/0f88ba18-921e-4fa6-9c87-bd4da2e8a37a
 
 <p>
-Dive into a seamless virtual teaching experience with the BigBlueButton Wordpress Plugin, the definitive tool for your online classroom needs on Wordpress. Crafted as a free forever software, this plugin empowers educators to effortlessly set up, manage, and access their virtual classrooms.
+Dive into a seamless virtual teaching experience with the Class++ Wordpress Plugin, the definitive tool for your online classroom needs on Wordpress. Crafted as a free forever software, this plugin empowers educators to effortlessly set up, manage, and access their virtual classrooms.
 
 BigBlueButton, renowned as a premier open-source virtual classroom software, is embraced by numerous educators and institutions globally. Yet, the challenge has always been its integration with popular platforms like Wordpress. That's where our plugin bridges the gap.
 
-Introducing the BigBlueButton Wordpress Plugin, your gateway to creating unlimited classrooms, configuring advanced settings, and even customizing branding to resonate with your institution's identity. Whether it's setting up an access code, uploading a presentation, enabling class recordings, or even specifying your logo and welcome message – everything is just a few clicks away.
+Introducing the Class++ Wordpress Plugin, your gateway to creating unlimited classrooms, configuring advanced settings, and even customizing branding to resonate with your institution's identity. Whether it's setting up an access code, uploading a presentation, enabling class recordings, or even specifying your logo and welcome message – everything is just a few clicks away.
 
 What's more? The smart invite URLs ensure a personalized touch. When embedded from a logged-in page, the invite URL automatically fetches the logged-in user's name and photo. And for logged-out pages? Simply pass a custom username and access code.
 
 It's not just about functionality; it's about simplicity. With an intuitive interface devoid of unnecessary bloat, this plugin ensures that educators can focus on what they do best - teach.
 
-Experience this transformative plugin today. Elevate your virtual teaching experience with the BigBlueButton Wordpress Plugin, because when it comes to education, simplicity and efficiency matter.
+Experience this transformative plugin today. Elevate your virtual teaching experience with the Class++ Wordpress Plugin, because when it comes to education, simplicity and efficiency matter.
 </p>
 
 <br/><br/>
 
-## 🗝️ Unlock Limitless Learning: Key Features of BigBlueButton Wordpress Plugin
+## 🗝️ Unlock Limitless Learning: Key Features of Class++ Wordpress Plugin
 1. 🏫 **Unlimited Classroom Creation**: Effortlessly set up as many virtual classrooms as you need, catering to diverse subjects and batches of students.
 2. 🛠️ **Comprehensive Classroom Configuration**: From setting up access codes and uploading presentations to enabling class recordings, get complete control over your virtual classroom settings.
 3. 🎨 **Branding Customization**: Personalize your virtual classroom experience by specifying your logo, redirecting users post-logout, and even customizing primary colors and welcome messages.
@@ -35,10 +35,10 @@ Experience this transformative plugin today. Elevate your virtual teaching exper
 
 <br/><br/>
 
-## 💡 6 Benefits: Elevate Education with BigBlueButton Wordpress Plugin
+## 💡 6 Benefits: Elevate Education with Class++ Wordpress Plugin
 1. 🌐 **Seamless Integration**: Directly integrate BigBlueButton with Wordpress, one of the world's most popular website platforms, ensuring a smooth experience for both educators and students.
 2. 🎓 **Empowered Teaching**: With a plethora of features, educators have the tools they need to deliver effective and engaging online lessons.
-3. 💸 **Budget-Friendly**: Being free forever, the BigBlueButton Wordpress Plugin ensures that quality education doesn't come with a hefty price tag.
+3. 💸 **Budget-Friendly**: Being free forever, the Class++ Wordpress Plugin ensures that quality education doesn't come with a hefty price tag.
 4. 🎨 **Personalized Branding**: Institutions can ensure their virtual classrooms resonate with their brand identity, fostering a sense of belonging among students.
 5. 🔄 **Flexibility in Classroom Management**: From configuring advanced settings to setting up access codes, educators have the flexibility to manage their classrooms as they see fit.
 6. 🤝 **Enhanced User Experience**: With smart invite URLs and easy access to recordings, students enjoy a user-friendly and personalized virtual learning environment.

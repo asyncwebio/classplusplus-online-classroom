@@ -101,7 +101,7 @@ const SettingsModal = ({ open, handleCancel }) => {
         ) : (
           <section>
             <Typography.Title level={5}>
-              ClassPlusPlus Settings
+              Class++ Settings
             </Typography.Title>
 
             {/* Add a link Don’t have a BigBlueButton server? Get BigBlueButton at 40% lower cost */}

@@ -215,7 +215,7 @@ function cpp_create_api_endpoint() {
 
 	// route for getting settings
 	register_rest_route(
-		'cpp-online-classroom/v1',
+		'classplusplus-online-classroom/v1',
 		'/get-settings/',
 		array(
 			'methods' => 'GET',
@@ -226,7 +226,7 @@ function cpp_create_api_endpoint() {
 
 	// route for saving settings
 	register_rest_route(
-		'cpp-online-classroom/v1',
+		'classplusplus-online-classroom/v1',
 		'/save-settings/',
 		array(
 			'methods' => 'POST',
@@ -238,7 +238,7 @@ function cpp_create_api_endpoint() {
 	// route for getting classes
 
 	register_rest_route(
-		'cpp-online-classroom/v1',
+		'classplusplus-online-classroom/v1',
 		'/get-classes/',
 		array(
 			'methods' => 'GET',
@@ -249,7 +249,7 @@ function cpp_create_api_endpoint() {
 
 	// route for creating a new class
 	register_rest_route(
-		'cpp-online-classroom/v1',
+		'classplusplus-online-classroom/v1',
 		'/create-class/',
 		array(
 			'methods' => 'POST',
@@ -260,7 +260,7 @@ function cpp_create_api_endpoint() {
 
 	// route for editing a class
 	register_rest_route(
-		'cpp-online-classroom/v1',
+		'classplusplus-online-classroom/v1',
 		'/edit-class/',
 		array(
 			'methods' => 'POST',
@@ -271,7 +271,7 @@ function cpp_create_api_endpoint() {
 
 	// route for deleting a class
 	register_rest_route(
-		'cpp-online-classroom/v1',
+		'classplusplus-online-classroom/v1',
 		'/delete-class/',
 		array(
 			'methods' => 'DELETE',
@@ -282,7 +282,7 @@ function cpp_create_api_endpoint() {
 
 	// route for starting a class
 	register_rest_route(
-		'cpp-online-classroom/v1',
+		'classplusplus-online-classroom/v1',
 		'/start-class/',
 		array(
 			'methods' => 'POST',
@@ -293,7 +293,7 @@ function cpp_create_api_endpoint() {
 
 	// route for joing a class
 	register_rest_route(
-		'cpp-online-classroom/v1',
+		'classplusplus-online-classroom/v1',
 		'/join-class/',
 		array(
 			'methods' => 'GET',
@@ -304,7 +304,7 @@ function cpp_create_api_endpoint() {
 
 	// route for getting a class recording
 	register_rest_route(
-		'cpp-online-classroom/v1',
+		'classplusplus-online-classroom/v1',
 		'/get-recordings/',
 		array(
 			'methods' => 'GET',
