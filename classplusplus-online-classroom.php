@@ -15,7 +15,7 @@
  *
  * @package Cpponlineclassroom
  *
- * @author Classplusplus Online Class <manish.katyan@higheredlab.com>
+ * @author HigherEdLab.com <manish.katyan@higheredlab.com>
  *
  * @license GPL-2.0-or-later https://www.gnu.org/licenses/gpl-2.0.html
  *
