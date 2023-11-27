@@ -21,7 +21,7 @@ export default function Header({
           alignItems: "center",
         }}
       >
-        <h2 className="app-title">ClassPlusPlus Online Class</h2>
+        <h2 className="app-title">Class++ Online Class</h2>
         <Space>
           <Button
             icon={<PlusOutlined />}
