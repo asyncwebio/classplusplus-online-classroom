@@ -6,3 +6,5 @@ build
 
 vendor/*
 build.sh
+package-lock.json
+yarn.lock
