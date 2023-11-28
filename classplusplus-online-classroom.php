@@ -6,7 +6,7 @@
  * Requires PHP:      7.0
  * php version        7.0
  * Version:           1.0.1
- * Author:            ClassPlusPlus.ai
+ * Author:            @higheredlab
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       classplusplus-online-classroom
@@ -15,7 +15,7 @@
  *
  * @package Cpponlineclassroom
  *
- * @author ClassPlusPlus.ai <manish.katyan@classplusplus.ai>
+ * @author @higheredlab
  *
  * @license GPL-2.0-or-later https://www.gnu.org/licenses/gpl-2.0.html
  *

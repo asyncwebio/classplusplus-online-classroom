@@ -1,5 +1,5 @@
 === Class++: AI-powered Online Classrooms ===
-Contributors:      ClassPlusPlus.ai
+Contributors:      @higheredlab
 Plugin link:       https://classplusplus.ai/
 Tags:              BigBlueButton, Online Class, bbb, AI, Artificial Intelligence, ChatGPT
 Tested up to:      6.2.2

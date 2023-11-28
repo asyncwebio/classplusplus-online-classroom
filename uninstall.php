@@ -7,7 +7,7 @@
  *
  * @package Cpponlineclassroom
  *
- * @author ClassPlusPlus.ai <manish.katyan@classplusplus.ai>
+ * @author @higheredlab
  *
  * @license GPLv3-or-later https://www.gnu.org/licenses/gpl-2.0.html
  *
