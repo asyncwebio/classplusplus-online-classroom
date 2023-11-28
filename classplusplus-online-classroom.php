@@ -6,7 +6,7 @@
  * Requires PHP:      7.0
  * php version        7.0
  * Version:           1.0.1
- * Author:            HigherEdLab.com
+ * Author:            ClassPlusPlus.ai
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       classplusplus-online-classroom
@@ -15,11 +15,11 @@
  *
  * @package Cpponlineclassroom
  *
- * @author HigherEdLab.com <manish.katyan@higheredlab.com>
+ * @author ClassPlusPlus.ai <manish.katyan@classplusplus.ai>
  *
  * @license GPL-2.0-or-later https://www.gnu.org/licenses/gpl-2.0.html
  *
- * @link https://marketingllama.ai/
+ * @link https://classplusplus.ai/
  */
 
 // set global variable for current user.

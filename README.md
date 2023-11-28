@@ -1,5 +1,5 @@
 <div align="center">
- <a href="https://higheredlab.com/" target="_blank"> <img alt="bbb-streaming" width="250" src="https://github.com/AsyncWeb/bigbluebutton-streaming/raw/master/static/hel-general-logo.png"> </a>
+ <a href="https://classplusplus.ai/" target="_blank"> <img alt="bbb-streaming" width="250" src="https://github.com/AsyncWeb/bigbluebutton-streaming/raw/master/static/hel-general-logo.png"> </a>
 </div>
 <h1 align="center">Class++ Wordpress Plugin</h1>
 
@@ -59,7 +59,7 @@ Experience this transformative plugin today. Elevate your virtual teaching exper
 1. **How to setup:**
    1. Go to 'BigBlueButton' menu on the admin side bar and click on 'Settings'.
    2. Enter your BigBlueButton server URL and secret key.
-   3. Don’t have a BigBlueButton server? [Get BigBlueButton at 40% lower cost](https://higheredlab.com/bigbluebutton-hosting/).
+   3. Don’t have a BigBlueButton server? [Get BigBlueButton at 40% lower cost](https://classplusplus.ai/).
 
 2. **How to use:**
    1. Go to click on 'Add New Class' to create a new class.
