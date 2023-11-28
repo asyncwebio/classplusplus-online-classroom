@@ -7,11 +7,11 @@
  *
  * @package Cpponlineclassroom
  *
- * @author HigherEdLab.com <manish.katyan@higheredlab.com>
+ * @author ClassPlusPlus.ai <manish.katyan@classplusplus.ai>
  *
  * @license GPLv3-or-later https://www.gnu.org/licenses/gpl-2.0.html
  *
- * @link https://higheredlab.com/
+ * @link https://classplusplus.ai/
  */
 
 // If uninstall is not called from WordPress, exit

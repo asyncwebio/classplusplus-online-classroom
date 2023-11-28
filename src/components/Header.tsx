@@ -45,7 +45,7 @@ export default function Header({
             className="settings-btn"
             onClick={() =>
               window.open(
-                "https://higheredlab.com/bigbluebutton-wordpress-help/",
+                "https://classplusplus.ai/wordpress-plugin/",
                 "_blank"
               )
             }

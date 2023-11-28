@@ -1,7 +1,7 @@
 === Class++: AI-powered Online Classrooms ===
-Contributors:      HigherEdLab.com
-Plugin link:       https://higheredlab.com/
-Tags:              BigBlueButton, Online Class, bbb
+Contributors:      ClassPlusPlus.ai
+Plugin link:       https://classplusplus.ai/
+Tags:              BigBlueButton, Online Class, bbb, AI, Artificial Intelligence, ChatGPT
 Tested up to:      6.2.2
 Stable tag:        1.0.1
 Requires at least: 6.1
@@ -19,7 +19,7 @@ Class++: AI-powered Online Classrooms that improve learning and reduce drop-offs
 
 Transform your WordPress site into an interactive Learning Management System with Class++: AI-powered Online Classrooms plugin. This powerful, user-friendly plugin seamlessly integrates Class++ server into any Wordpress site, offering a comprehensive solution for educators, trainers, and professionals to conduct engaging and interactive online classes via their Wordpress sites. With easy configuration, the plugin offers a range of features to enhance your online teaching experience, while leveraging key Wordpress features such as user and content management.
 
-## <a href="https://higheredlab.com/?utm_source=Plugin&utm_campaign=WP" target="_blank">Start a FREE trial of Class++: AI-powered Online Classrooms</a> ##
+## <a href="https://classplusplus.ai/?utm_source=Plugin&utm_campaign=WP" target="_blank">Start a FREE trial of Class++: AI-powered Online Classrooms</a> ##
 
 Class++ online classroom is built over <a href="https://bigbluebutton.org/" target="_blank">BigBlueButton</a> and is supercharged with AI features such as: 
 - **ChatGPT-powered quiz** to generate quizzes on any topic, tailored to your desired difficulty level
@@ -41,7 +41,7 @@ Here's how the Class++ plugin enables your online classroom management:
 - **Branding and Personalization:** Strengthen your brand identity with custom logos, welcome messages, and theme colors. Redirect attendees to a custom logout page, ensuring a consistent and professional experience from start to finish.
 - **Versatile Layout Options:** Choose from video-focused, presentation-focused, or hybrid layouts to best suit the nature of your class.
 - **Lightweight and Performance-Oriented:** Designed to be lightweight, the plugin ensures your website’s performance remains smooth and efficient, with no adverse impact on loading times.
-- **Dedicated Support and Development:** Encounter an issue? Our dedicated support team at support@higheredlab.com is ready to assist you. Plus, with regular updates, the plugin keeps pace with the latest WordPress versions and user needs.
+- **Dedicated Support and Development:** Encounter an issue? Our dedicated support team at support@classplusplus.ai is ready to assist you. Plus, with regular updates, the plugin keeps pace with the latest WordPress versions and user needs.
 
 
 == Features ==
@@ -85,7 +85,7 @@ Here's how the Class++ plugin enables your online classroom management:
 
 1. How to setup
 	1. Go to 'Class++' menu on the admin side bar and click on 'Settings'
-	2. Enter your Class++ server URL and secret key. Don’t have a Class++ server? <a href="https://higheredlab.com/" target="_blank">Start a 2-week free trial</a>.
+	2. Enter your Class++ server URL and secret key. Don’t have a Class++ server? <a href="https://classplusplus.ai/" target="_blank">Start a 2-week free trial</a>.
 	3. Alternatively, enter any self-hosted or 3rd party BigBlueButton URL and secret. 
 2. How to start a class
 	1. Creating a Class: Go to the Class++ plugin section and click on "Add New Class". Fill in the details and save.
@@ -99,7 +99,7 @@ Here's how the Class++ plugin enables your online classroom management:
 == Frequently Asked Questions ==
 
 = How do I connect the plugin to a Class++ server? =
-<a href="https://higheredlab.com/" target="_blank">Click here</a> to get a Class++ server subscription. After login to your Class++ account, visit Integration page to note down the server URL and Secret. Visit the Class++ plugin details page on your Wordpress site and click on Settings button. Enter the Class++ URL and Secret and click on Save. 
+<a href="https://classplusplus.ai/" target="_blank">Click here</a> to get a Class++ server subscription. After login to your Class++ account, visit Integration page to note down the server URL and Secret. Visit the Class++ plugin details page on your Wordpress site and click on Settings button. Enter the Class++ URL and Secret and click on Save. 
 
 = How do I connect the plugin to a BigBlueButton server? =
 You can connect the Class++ plugin to any self-hosted or 3rd party BigBlueButton server. Visit the Class++ plugin details page on your Wordpress site and click on Settings button. Enter the BigBlueButton URL and Secret and click on Save.
@@ -120,7 +120,7 @@ Yes, the plugin enables you to view all recordings of a given class. These recor
 Absolutely. The plugin offers extensive customization options for each class. You can give meaningful names to classes, secure them with access codes, specify custom presentation URLs, enable recording, require moderator approval for joining, and customize branding elements like logos, welcome messages, and theme colors. You can also set up a custom logout page, change the class layout, enable private chat, and provide additional metadata.
 
 = Is it necessary to have a Class++ or BigBlueButton server before using this plugin? = 
-Yes, you need access to a Class++ server. <a href="https://higheredlab.com/" target="_blank">Click here to start a free two-week trial</a>. 
+Yes, you need access to a Class++ server. <a href="https://classplusplus.ai/" target="_blank">Click here to start a free two-week trial</a>. 
 Alternatively, you can also use this plugin with any self-hosted or 3rd party BigBlueButton server. You would need server URL and secret from either Class++ or BigBlueButton server for the plugin to work correctly.
 
 = Can I restrict class access to certain users? = 
@@ -151,7 +151,7 @@ Yes, participants can join a class without needing a WordPress account.
 The plugin is designed to be lightweight and has no impact on your website’s performance and loading times.
 
 == What should I do if I encounter errors or technical issues? ==
-If you encounter any errors or technical issues, please reach out to us at support@higheredlab.com for assistance.
+If you encounter any errors or technical issues, please reach out to us at support@classplusplus.ai for assistance.
 
 == Is this a free plugin, or are there premium features available for purchase? ==
 This is a free plugin.
@@ -165,7 +165,7 @@ This is a free plugin.
 
 == Support ==
 
-For support or feature requests, please contact [https://higheredlab.com/contact].
+For support or feature requests, please contact [https://classplusplus.ai/contact].
 
 == Changelog ==
 

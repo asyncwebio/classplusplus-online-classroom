@@ -106,7 +106,7 @@ const SettingsModal = ({ open, handleCancel }) => {
 
             {/* Add a link Don’t have a BigBlueButton server? Get BigBlueButton at 40% lower cost */}
             <Typography.Link
-              href="https://higheredlab.com/"
+              href="https://classplusplus.ai/"
               target="_blank"
             >
               Don’t have a BigBlueButton server? Start Free Trial.
