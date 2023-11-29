@@ -2,7 +2,7 @@
 Contributors:      @higheredlab
 Plugin link:       https://classplusplus.ai/
 Tags:              BigBlueButton, Online Class, bbb, AI, Artificial Intelligence, ChatGPT
-Tested up to:      6.2.2
+Tested up to:      6.4.1
 Stable tag:        1.0.1
 Requires at least: 6.1
 Requires PHP:      7.4
