@@ -20,10 +20,10 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 }
 
 // Delete plugin options
-delete_option( 'cpp_settings' );
+delete_option( 'classplusplus_settings' );
 
 // Delete custom database tables
 global $wpdb;
-$table_name = $wpdb->prefix . 'cpp_online_classroom';
+$table_name = $wpdb->prefix . 'classplusplus_online_classroom';
 $wpdb->query( "DROP TABLE IF EXISTS $table_name" );
 
