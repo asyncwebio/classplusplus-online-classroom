@@ -1,6 +1,6 @@
-=== Class++: AI-powered Online Classrooms ===
+=== HEL Online Classroom: AI-powered Online Classrooms ===
 Contributors:      @higheredlab
-Plugin link:       https://classplusplus.ai/
+Plugin link:       https://higheredlab.com/
 Tags:              BigBlueButton, Online Class, bbb, AI, Artificial Intelligence, ChatGPT
 Tested up to:      6.4.1
 Stable tag:        1.0.1
@@ -9,30 +9,30 @@ Requires PHP:      7.4
 License:           GPLv3 or later
 License URI:       https://www.gnu.org/licenses/gpl-3.0.txt
 
-Class++: AI-powered Online Classrooms that improve learning and reduce drop-offs
+HEL Online Classroom: AI-powered Online Classrooms that improve learning and reduce drop-offs
 
 == Description ==
 
-## Class++: AI-powered Online Classrooms ##
+## HEL Online Classroom: AI-powered Online Classrooms ##
 **The ultimate online classroom platform that blends AI-driven engagement tools, intuitive interface, and scalable solutions — empowering you to improve learning experience, lower students’ drop-off, and transform online education.**
 ★★★★★<br>
 
-Transform your WordPress site into an interactive Learning Management System with Class++: AI-powered Online Classrooms plugin. This powerful, user-friendly plugin seamlessly integrates Class++ server into any Wordpress site, offering a comprehensive solution for educators, trainers, and professionals to conduct engaging and interactive online classes via their Wordpress sites. With easy configuration, the plugin offers a range of features to enhance your online teaching experience, while leveraging key Wordpress features such as user and content management.
+Transform your WordPress site into an interactive Learning Management System with HEL Online Classroom: AI-powered Online Classrooms plugin. This powerful, user-friendly plugin seamlessly integrates HEL Online Classroom server into any Wordpress site, offering a comprehensive solution for educators, trainers, and professionals to conduct engaging and interactive online classes via their Wordpress sites. With easy configuration, the plugin offers a range of features to enhance your online teaching experience, while leveraging key Wordpress features such as user and content management.
 
-## <a href="https://classplusplus.ai/?utm_source=Plugin&utm_campaign=WP" target="_blank">Start a FREE trial of Class++: AI-powered Online Classrooms</a> ##
+## <a href="https://classplusplus.ai/?utm_source=Plugin&utm_campaign=WP" target="_blank">Start a FREE trial of HEL Online Classroom: AI-powered Online Classrooms</a> ##
 
-Class++ online classroom is built over <a href="https://bigbluebutton.org/" target="_blank">BigBlueButton</a> and is supercharged with AI features such as: 
+HEL Online Classroom is built over <a href="https://bigbluebutton.org/" target="_blank">BigBlueButton</a> and is supercharged with AI features such as: 
 - **ChatGPT-powered quiz** to generate quizzes on any topic, tailored to your desired difficulty level
 - **Speech-to-Speech translate** your online classes in real-time into 100+ languages for global reach
 - **Fully customizable** online classrooms with your domain, logo, messaging and theme
 - **Streaming**: Stream your classes to 1000s of student on YouTube with a single click
 - **Analytics**: Get attendance record, chat log, and class recordings for engagement insights
 
-You can also use Class++ wordpress plugin to integrate any self-hosted or 3rd party BigBlueButton server into your Wordpress site.
+You can also use HEL Online Classroom wordpress plugin to integrate any self-hosted or 3rd party BigBlueButton server into your Wordpress site.
 
-Here's how the Class++ plugin enables your online classroom management:
+Here's how the HEL Online Classroom plugin enables your online classroom management:
 
-- **Ease of Integration:** Seamlessly connect with CLass++ server or any self-hosted / third-party BigBlueButton server. The simple setup process ensures you're up and running in no time, making it an ideal solution regardless of your technical expertise.
+- **Ease of Integration:** Seamlessly connect with HEL Online Classroom server or any self-hosted / third-party BigBlueButton server. The simple setup process ensures you're up and running in no time, making it an ideal solution regardless of your technical expertise.
 - **Unlimited Flexibility in Class Creation:** Break free from limitations with the ability to create an unlimited number of classes. Cater to diverse groups and sessions without the worry of hitting a cap on your class count.
 - **Instant Access to Start Classes:** Launch your online sessions with just a single click. This feature simplifies the process of beginning a class, saving valuable time and effort.
 - **Effortless Invitation Process:** Share meeting URLs easily for quick participant join-ins. The plugin enables URL integration in password-protected user account pages, adding a personalized touch by including the user's name as a parameter.
@@ -70,25 +70,25 @@ Here's how the Class++ plugin enables your online classroom management:
 == Installation ==
 
 1. Visit 'Plugin > Add New'
-2. Search for 'Class++'
-3. Install 'Class++' once it appears
-4. Activate 'Class++' from your Plugins page
+2. Search for 'HEL Online Classroom'
+3. Install 'HEL Online Classroom' once it appears
+4. Activate 'HEL Online Classroom' from your Plugins page
 5. Go to 'Setup & Usage' below
 
 = Manually =
 
 1. Upload the 'classplusplus' folder to the '/wp-content/plugins/' directory
-2. Activate the 'Class++' plugin through the 'Plugins' menu in WordPress
+2. Activate the 'HEL Online Classroom' plugin through the 'Plugins' menu in WordPress
 3. Go to 'Setup & Usage' below
 
 = Setup & Usage =
 
 1. How to setup
-	1. Go to 'Class++' menu on the admin side bar and click on 'Settings'
-	2. Enter your Class++ server URL and secret key. Don’t have a Class++ server? <a href="https://classplusplus.ai/" target="_blank">Start a 2-week free trial</a>.
+	1. Go to 'HEL Online Classroom' menu on the admin side bar and click on 'Settings'
+	2. Enter your HEL Online Classroom server URL and secret key. Don’t have a HEL Online Classroom server? <a href="https://classplusplus.ai/" target="_blank">Start a 2-week free trial</a>.
 	3. Alternatively, enter any self-hosted or 3rd party BigBlueButton URL and secret. 
 2. How to start a class
-	1. Creating a Class: Go to the Class++ plugin section and click on "Add New Class". Fill in the details and save.
+	1. Creating a Class: Go to the HEL Online Classroom plugin section and click on "Add New Class". Fill in the details and save.
         2. Starting a Class: Click on the "Start Class" button next to the class you want to begin.
         3. Sharing Meeting URL: The meeting URL is automatically generated. Click on Invite link to copy it and share with attendees.
 3. How to view recordings
@@ -98,11 +98,11 @@ Here's how the Class++ plugin enables your online classroom management:
 
 == Frequently Asked Questions ==
 
-= How do I connect the plugin to a Class++ server? =
-<a href="https://classplusplus.ai/" target="_blank">Click here</a> to get a Class++ server subscription. After login to your Class++ account, visit Integration page to note down the server URL and Secret. Visit the Class++ plugin details page on your Wordpress site and click on Settings button. Enter the Class++ URL and Secret and click on Save. 
+= How do I connect the plugin to a HEL Online Classroom server? =
+<a href="https://classplusplus.ai/" target="_blank">Click here</a> to get a HEL Online Classroom server subscription. After login to your HEL Online Classroom account, visit Integration page to note down the server URL and Secret. Visit the HEL Online Classroom plugin details page on your Wordpress site and click on Settings button. Enter the HEL Online Classroom URL and Secret and click on Save. 
 
 = How do I connect the plugin to a BigBlueButton server? =
-You can connect the Class++ plugin to any self-hosted or 3rd party BigBlueButton server. Visit the Class++ plugin details page on your Wordpress site and click on Settings button. Enter the BigBlueButton URL and Secret and click on Save.
+You can connect the HEL Online Classroom plugin to any self-hosted or 3rd party BigBlueButton server. Visit the HEL Online Classroom plugin details page on your Wordpress site and click on Settings button. Enter the BigBlueButton URL and Secret and click on Save.
 
 = Can I create multiple classes with this plugin? =
 Yes, the plugin allows you to create an unlimited number of classes. Navigate to the plugin section in your WordPress dashboard and use the "Add New Class" option to create as many classes as you need.
@@ -119,9 +119,9 @@ Yes, the plugin enables you to view all recordings of a given class. These recor
 = Can I customize my classes? = 
 Absolutely. The plugin offers extensive customization options for each class. You can give meaningful names to classes, secure them with access codes, specify custom presentation URLs, enable recording, require moderator approval for joining, and customize branding elements like logos, welcome messages, and theme colors. You can also set up a custom logout page, change the class layout, enable private chat, and provide additional metadata.
 
-= Is it necessary to have a Class++ or BigBlueButton server before using this plugin? = 
-Yes, you need access to a Class++ server. <a href="https://classplusplus.ai/" target="_blank">Click here to start a free two-week trial</a>. 
-Alternatively, you can also use this plugin with any self-hosted or 3rd party BigBlueButton server. You would need server URL and secret from either Class++ or BigBlueButton server for the plugin to work correctly.
+= Is it necessary to have a HEL Online Classroom or BigBlueButton server before using this plugin? = 
+Yes, you need access to a HEL Online Classroom server. <a href="https://classplusplus.ai/" target="_blank">Click here to start a free two-week trial</a>. 
+Alternatively, you can also use this plugin with any self-hosted or 3rd party BigBlueButton server. You would need server URL and secret from either HEL Online Classroom or BigBlueButton server for the plugin to work correctly.
 
 = Can I restrict class access to certain users? = 
 The plugin allows you to secure your class with an access code. Additionally, you can manage participant entry through moderator approval setting. With a little bit of programming, you can customize users' join URL with their names that you can pass as a parameter. 

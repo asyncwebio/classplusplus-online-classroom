@@ -5,13 +5,13 @@
  *
  * @category Plugin
  *
- * @package Cpponlineclassroom
+ * @package HELOnlineClassroom
  *
  * @author @higheredlab
  *
  * @license GPLv3-or-later https://www.gnu.org/licenses/gpl-2.0.html
  *
- * @link https://classplusplus.ai/
+ * @link https://higheredlab.com/
  */
 
 // If uninstall is not called from WordPress, exit
@@ -20,10 +20,9 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 }
 
 // Delete plugin options
-delete_option( 'classplusplus_settings' );
+delete_option( 'hel_settings' );
 
 // Delete custom database tables
 global $wpdb;
-$table_name = $wpdb->prefix . 'classplusplus_online_classroom';
+$table_name = $wpdb->prefix . 'hel_online_classroom';
 $wpdb->query( "DROP TABLE IF EXISTS $table_name" );
-
